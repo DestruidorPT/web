@@ -1,0 +1,30 @@
+[
+    {
+        "relation":[
+            "delegate_permission/common.handle_all_urls",
+            "delegate_permission/common.get_login_creds"
+        ],
+        "target":{
+            "namespace":"web",
+            "site":"https://bitwarden.com"
+        }
+    },
+    {
+        "relation":[
+            "delegate_permission/common.handle_all_urls",
+            "delegate_permission/common.get_login_creds"
+        ],
+        "target":{
+            "namespace":"android_app",
+            "package_name":"com.x8bit.bitwarden",
+            "md5_cert_fingerprints":[
+                "35:E6:B6:4F:53:2F:58:EA:4B:E7:0B:D8:2D:0D:52:53"
+            ],"sha1_cert_fingerprints":[
+                "3A:29:56:60:D4:38:7C:01:C8:BC:BA:C0:6E:57:8A:6F:82:A5:3B:7D"
+            ],"sha256_cert_fingerprints":[
+                "2C:1A:66:1E:58:EA:C0:92:4B:75:75:4D:A6:37:DD:03:3D:A4:D8:C3:68:8D:C4:85:65:92:2E:46:3D:41:E3:02"
+            ]
+
+        }
+    }
+]
