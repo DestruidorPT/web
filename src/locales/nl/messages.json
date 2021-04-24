@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Steek je beveilingssleutel in de USB-poort van je computer. Als het een knop heeft, druk deze dan in."
   },
+  "insertFido2": {
+    "message": "Steek je beveilingssleutel in de USB-poort van je computer. Als het een knop heeft, druk deze dan in."
+  },
   "loginUnavailable": {
     "message": "Login niet beschikbaar"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F-beveiligingssleutel"
+  },
+  "fido2Desc": {
+    "message": "Gebruik een FIDO2-beveiligingssleutel om toegang te krijgen tot je account."
+  },
+  "fido2Title": {
+    "message": "FIDO2-beveiligingssleutel"
   },
   "emailTitle": {
     "message": "E-mailadres"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2-sleutel $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC-ondersteuning"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Weet je zeker dat je deze beveiligingssleutel wilt verwijderen?"
   },
+  "twoFactorFido2Add": {
+    "message": "FIDO2-beveiligingssleutel aan je account toevoegen"
+  },
+  "removeFido2Confirmation": {
+    "message": "Weet je zeker dat je deze beveiligingssleutel wilt verwijderen?"
+  },
   "readKey": {
     "message": "Sleutel lezen"
   },
@@ -1318,6 +1342,33 @@
     "message": "Klik hieronder op \"Opslaan\" voor het instellen van deze beveiligingssleutel als tweestapsaanmeldingsmethode."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Er was een probleem met het lezen van de beveiligingssleutel. Probeer het nogmaals."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Geef de beveiligingssleutel een beschrijvende naam om deze te identificeren."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Plaats de beveiligingssleutel in een USB-poort van je computer en klik \"Lees sleutel\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Als de beveiligingssleutel een knop heeft, druk deze dan in."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Formulier opslaan."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Vanwege platformbeperkingen kun je FIDO2 niet in alle Bitwarden-applicaties gebruiken. Stel een andere tweestapsaanmeldingsaanbieder in voor situaties waar FIDO2 niet gebruikt kan worden. De volgende platformen worden ondersteund:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Webkluis en browser-extensies op een desktop/laptop met browserondersteuning voor FIDO2 (Chrome, Opera, Vivaldi of Firefox met FIDO2 ingeschakeld)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Wachten tot je op de knop van de beveiligingssleutel hebt gedrukt"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Klik hieronder op \"Opslaan\" voor het instellen van deze beveiligingssleutel als tweestapsaanmeldingsmethode."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Er was een probleem met het lezen van de beveiligingssleutel. Probeer het nogmaals."
   },
   "twoFactorRecoveryYourCode": {

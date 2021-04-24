@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Ievieto savu drošības atslēgu datora USB ligzdā. Ja tai ir poga, pieskaries tai."
   },
+  "insertFido2": {
+    "message": "Ievieto savu drošības atslēgu datora USB ligzdā. Ja tai ir poga, pieskaries tai."
+  },
   "loginUnavailable": {
     "message": "Ieeja Nepieejama"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F Drošības Atslēga"
+  },
+  "fido2Desc": {
+    "message": "Izmanto jebkuru FIDO2 atbalstošu drošības atslēgu lai piekļūtu savam kontam."
+  },
+  "fido2Title": {
+    "message": "FIDO2 Drošības Atslēga"
   },
   "emailTitle": {
     "message": "E-pasts"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Atslēga $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC Atbalsts"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Vai tiešām vēlaties noņemt šo drošības atslēgu?"
   },
+  "twoFactorFido2Add": {
+    "message": "Pievienot FIDO2 drošības atslēgu savam kontam"
+  },
+  "removeFido2Confirmation": {
+    "message": "Vai tiešām vēlaties noņemt šo drošības atslēgu?"
+  },
   "readKey": {
     "message": "Lasīt Atslēgu"
   },
@@ -1306,10 +1330,10 @@
     "message": "Saglabājiet formu."
   },
   "twoFactorU2fWarning": {
-    "message": "Dēļ platformu ierobežojumiem, FIDO U2F nevar izmantot visās Bitwarden lietotnēs. Ieteicams iespējot papildus divpakāpju nodrošinātāju lai jūs varētu piekļūt savam kontam kad FIDO U2F nevar izmantot. Atbalstītās platformas:"
+    "message": "Dēļ platformu ierobežojumiem, FIDO2 nevar izmantot visās Bitwarden lietotnēs. Ieteicams iespējot papildus divpakāpju nodrošinātāju lai jūs varētu piekļūt savam kontam kad FIDO2 nevar izmantot. Atbalstītās platformas:"
   },
   "twoFactorU2fSupportWeb": {
-    "message": "Tīmekļa seifs un pārlūka paplašinājumi stacionārā datorā/portatīvajā datorā ar U2F atbalstošu pārlūku (Chrome, Opera, Vivaldi vai Firefox ar FIDO U2F iespējotu)."
+    "message": "Tīmekļa seifs un pārlūka paplašinājumi stacionārā datorā/portatīvajā datorā ar FIDO2 atbalstošu pārlūku (Chrome, Opera, Vivaldi vai Firefox ar FIDO2 iespējotu)."
   },
   "twoFactorU2fWaiting": {
     "message": "Gaidām līdz jūs pieskarsieties uz jūsu drošības atslēgas esošai pogai"
@@ -1318,6 +1342,33 @@
     "message": "Nospiediet zemāk esošo \"Saglabāt\" pogu lai iespējotu šo drošības atslēgu priekš divpakāpju ieejas."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Notika problēma nolasot drošības atslēgu. Lūdzu mēģiniet vēlreiz."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Iedodiet drošības atslēgai draudzīgu nosaukumu lai palīdzētu to identificēt."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Ievietojiet drošības atslēgu sava datora USB ligzdā un nospiediet pogu \"Lasīt Atslēgu\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Ja drošības atslēgai ir poga, pieskarieties tai."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Saglabājiet formu."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Dēļ platformu ierobežojumiem, FIDO U2F nevar izmantot visās Bitwarden lietotnēs. Ieteicams iespējot papildus divpakāpju nodrošinātāju lai jūs varētu piekļūt savam kontam kad FIDO U2F nevar izmantot. Atbalstītās platformas:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Tīmekļa seifs un pārlūka paplašinājumi stacionārā datorā/portatīvajā datorā ar U2F atbalstošu pārlūku (Chrome, Opera, Vivaldi vai Firefox ar FIDO U2F iespējotu)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Gaidām līdz jūs pieskarsieties uz jūsu drošības atslēgas esošai pogai"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Nospiediet zemāk esošo \"Saglabāt\" pogu lai iespējotu šo drošības atslēgu priekš divpakāpju ieejas."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Notika problēma nolasot drošības atslēgu. Lūdzu mēģiniet vēlreiz."
   },
   "twoFactorRecoveryYourCode": {

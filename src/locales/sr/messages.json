@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Убаците свој сигурносни кључ у УСБ порт рачунара, и ако има дугме, додирните га."
   },
+  "insertFido2": {
+    "message": "Убаците свој сигурносни кључ у УСБ порт рачунара, и ако има дугме, додирните га."
+  },
   "loginUnavailable": {
     "message": "Пријава недоступна"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F сигурносни кључ"
+  },
+  "fido2Desc": {
+    "message": "Користите било који FIDO2 сигурносни кључ за присту налога."
+  },
+  "fido2Title": {
+    "message": "FIDO2 сигурносни кључ"
   },
   "emailTitle": {
     "message": "Е-пошта"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 кључ $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC подршка"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Да ли сте сигурни да желите да уклоните овај сигурносни кључ?"
   },
+  "twoFactorFido2Add": {
+    "message": "Додати FIDO U2F сигурносни кључ вашем налогу"
+  },
+  "removeFido2Confirmation": {
+    "message": "Да ли сте сигурни да желите да уклоните овај сигурносни кључ?"
+  },
   "readKey": {
     "message": "Читај кључ"
   },
@@ -1318,6 +1342,33 @@
     "message": "Кликните на „Сачувај“ да бисте омогућили овај безбедносни кључ за пријављивање у два корака."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Догодила се грешка приликом читања безбедносног кључа. Покушајте поново."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Дајте безбедносном кључу пријатељско име да бисте га препознали."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Прикључите безбедносни кључ у УСБ порт рачунара и кликните на дугме „Читај Кључ“."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Ако сигурносни кључ има дугме, додирните га."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Сачувај образац."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Због ограничења платформе, FIDO2 се не могу користити на свим Bitwarden апликацијама. Требали бисте омогућити другог добављача услуге пријављивања у два корака како бисте могли да приступите свом налогу када FIDO2 не могу да се користе. Подржане платформе:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Веб сеф и додатке прегледача на рачунару са FIDO2 омогућен прегледач (Chrome, Opera, Vivaldi, или Firefox са FIDO2 омогућено)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Чекајући да додирнете дугме на вашем сигурносном кључу"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Кликните на „Сачувај“ да бисте омогућили овај безбедносни кључ за пријављивање у два корака."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Догодила се грешка приликом читања безбедносног кључа. Покушајте поново."
   },
   "twoFactorRecoveryYourCode": {

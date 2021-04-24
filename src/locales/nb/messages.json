@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Sett din sikkerhetsnøkkel inn i din datamaskins USB-uttak. Dersom den har en knapp, trykk på den."
   },
+  "insertFido2": {
+    "message": "Sett din sikkerhetsnøkkel inn i din datamaskins USB-uttak. Dersom den har en knapp, trykk på den."
+  },
   "loginUnavailable": {
     "message": "Innloggingen er utilgjengelig"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F-sikkerhetsnøkkel"
+  },
+  "fido2Desc": {
+    "message": "Bruk enhver FIDO2-aktivert sikkerhetsnøkkel til å få tilgang til kontoen din."
+  },
+  "fido2Title": {
+    "message": "FIDO2-sikkerhetsnøkkel"
   },
   "emailTitle": {
     "message": "E-post"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2-nøkkel $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC-støtte"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Er du sikker på at du vil fjerne denne sikkerhetsnøkkelen?"
   },
+  "twoFactorFido2Add": {
+    "message": "Legg til en FIDO2-sikkerhetsnøkkel til din konto"
+  },
+  "removeFido2Confirmation": {
+    "message": "Er du sikker på at du vil fjerne denne sikkerhetsnøkkelen?"
+  },
   "readKey": {
     "message": "Les nøkkel"
   },
@@ -1318,6 +1342,33 @@
     "message": "Klikk på «Lagre»-knappen nedenfor for å aktivere denne sikkerhetsnøkkelen for 2-trinnsinnlogging."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Det oppsto et problem med å lese sikkerhetsnøkkelen. Prøv igjen."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Gi sikkerhetsnøkkelen et vennlig navn for å identifisere den."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Sett sikkerhetsnøkkelen inn i din datamaskins USB-port, og klikk på «Les nøkkel»-knappen."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Dersom sikkerhetsnøkkelen har en knapp, trykk på den."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Lagre skjemaet."
+  },
+  "twoFactorFido2Warning": {
+    "message": "På grunn av plattformbegrensninger, kan FIDO2 ikke bli brukt på alle Bitwarden-apper. Du burde skru på en annen 2-trinnsinnloggingsleverandør, sånn at du kan få tilgang til din konto når FIDO2 ikke kan bli brukt. Støttede plattformer:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Netthvelv og nettleserutvidelser, på en datamaskin med en FIDO2-støttende nettleser (Chrome, Opera, Vivaldi, eller Firefox med FIDO2 aktivert)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Venter på at du skal trykke på knappen på din sikkerhetsnøkkel"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Klikk på «Lagre»-knappen nedenfor for å aktivere denne sikkerhetsnøkkelen for 2-trinnsinnlogging."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Det oppsto et problem med å lese sikkerhetsnøkkelen. Prøv igjen."
   },
   "twoFactorRecoveryYourCode": {

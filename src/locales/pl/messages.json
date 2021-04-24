@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Włóż klucz bezpieczeństwa do portu USB komputera. Jeśli klucz posiada przycisk, dotknij go."
   },
+  "insertFido2": {
+    "message": "Włóż klucz bezpieczeństwa do portu USB komputera. Jeśli klucz posiada przycisk, dotknij go."
+  },
   "loginUnavailable": {
     "message": "Logowanie jest niedostępne"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "Klucz bezpieczeństwa FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "Użyj dowolnego klucza bezpieczeństwa FIDO2, aby uzyskać dostęp do Twojego konta."
+  },
+  "fido2Title": {
+    "message": "Klucz bezpieczeństwa FIDO2"
   },
   "emailTitle": {
     "message": "Adres e-mail"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "Klucz FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Obsługa NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Czy na pewno chcesz usunąć ten klucz bezpieczeństwa?"
   },
+  "twoFactorFido2Add": {
+    "message": "Dodaj klucz bezpieczeństwa FIDO2 do swojego konta"
+  },
+  "removeFido2Confirmation": {
+    "message": "Czy na pewno chcesz usunąć ten klucz bezpieczeństwa?"
+  },
   "readKey": {
     "message": "Odczytaj klucz"
   },
@@ -1318,6 +1342,33 @@
     "message": "Kliknij przycisk \"Zapisz\", aby włączyć ten klucz bezpieczeństwa dla logowania dwustopniowego."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Wystąpił problem z odczytem klucza bezpieczeństwa. Spróbuj ponownie."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Nadaj kluczowi bezpieczeństwa przyjazną nazwę, aby go łatwiej zidentyfikować."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Podłącz klucz bezpieczeństwa do portu USB komputera i kliknij przycisk \"Odczytaj klucz\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Jeśli klucz bezpieczeństwa posiada przycisk, dotknij go."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Zapisz formularz."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Z powodu ograniczeń platformy, klucze FIDO2 nie mogą być używane we wszystkich aplikacjach Bitwarden. Musisz włączyć inną metodę logowania dwustopniowego, aby zachować dostęp do konta w pozostałych sytuacjach. Wspierane platformy:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Sejf internetowy i rozszerzenia przeglądarki na komputerze/laptopie z przeglądarką obsługującą FIDO2 (Chrome, Opera, Vivaldi lub Firefox z włączoną obsługą FIDO2)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Oczekiwanie na dotknięcie klucza bezpieczeństwa"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Kliknij przycisk \"Zapisz\", aby włączyć ten klucz bezpieczeństwa dla logowania dwustopniowego."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Wystąpił problem z odczytem klucza bezpieczeństwa. Spróbuj ponownie."
   },
   "twoFactorRecoveryYourCode": {

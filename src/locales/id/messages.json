@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Masukkan kunci keamanan ke port USB komputer Anda. Jika ada tombolnya, tekanlah."
   },
+  "insertFido2": {
+    "message": "Masukkan kunci keamanan ke port USB komputer Anda. Jika ada tombolnya, tekanlah."
+  },
   "loginUnavailable": {
     "message": "Info Masuk Tidak Tersedia"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "Kunci Keamanan FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "Menggunakan FIDO2 mengaktifkan kunci keamanan untuk mengakses akun anda."
+  },
+  "fido2Title": {
+    "message": "Kunci Keamanan FIDO2"
   },
   "emailTitle": {
     "message": "Surel"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "Kunci FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Dukungan NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Anda yakin ingin menghapus kunci keamanan ini?"
   },
+  "twoFactorFido2Add": {
+    "message": "Tambahkan kunci keamanan FIDO2 ke akun Anda"
+  },
+  "removeFido2Confirmation": {
+    "message": "Anda yakin ingin menghapus kunci keamanan ini?"
+  },
   "readKey": {
     "message": "Baca Kunci"
   },
@@ -1318,6 +1342,33 @@
     "message": "Klik tombol \"Simpan\" di bawah untuk mengaktifkan kunci keamanan ini untuk login dua langkah."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Ada masalah saat membaca kunci keamanan. Coba lagi."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Beri nama kunci keamanan untuk mengidentifikasinya."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Colokkan kunci keamanan ke port USB komputer Anda dan klik tombol \"Read Key\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Jika kunci keamanan memiliki tombol, sentuhlah."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Simpan formulir."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Karena keterbatasan platform, FIDO2 tidak dapat digunakan di semua aplikasi Bitwarden. Anda harus mengaktifkan penyedia login dua langkah lainnya sehingga Anda dapat mengakses akun Anda saat FIDO2 tidak dapat digunakan. Platform yang didukung:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Kubah web dan ekstensi browser di desktop / laptop dengan browser yang mendukung FIDO2 (Chrome, Opera, Vivaldi, atau Firefox dengan FIDO2 diaktifkan)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Menunggu Anda menyentuh tombol di kunci keamanan Anda"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Klik tombol \"Simpan\" di bawah untuk mengaktifkan kunci keamanan ini untuk login dua langkah."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Ada masalah saat membaca kunci keamanan. Coba lagi."
   },
   "twoFactorRecoveryYourCode": {

@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Anslut din säkerhetsnyckel till datorns USB-port. Om den har en knapp, tryck på den."
   },
+  "insertFido2": {
+    "message": "Anslut din säkerhetsnyckel till datorns USB-port. Om den har en knapp, tryck på den."
+  },
   "loginUnavailable": {
     "message": "Inloggning ej tillgänglig"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F-säkerhetsnyckel"
+  },
+  "fido2Desc": {
+    "message": "Använd en FIDO2-aktiverad säkerhetsnyckel för att komma åt ditt konto."
+  },
+  "fido2Title": {
+    "message": "FIDO2-säkerhetsnyckel"
   },
   "emailTitle": {
     "message": "E-post"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2-nyckel $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC-stöd"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Är du säker på att du vill ta bort denna säkerhetsnyckel?"
   },
+  "twoFactorFido2Add": {
+    "message": "Lägg till en FIDO2-säkerhetsnyckel till ditt konto"
+  },
+  "removeFido2Confirmation": {
+    "message": "Är du säker på att du vill ta bort denna säkerhetsnyckel?"
+  },
   "readKey": {
     "message": "Läs nyckel"
   },
@@ -1318,6 +1342,33 @@
     "message": "Klicka på \"Spara\"-knappen nedan för att aktivera denna säkerhetsnyckel för tvåstegsverifiering."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Det gick inte att läsa säkerhetsnyckeln. Försök igen."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Ge säkerhetsnyckeln ett namn för att kunna identifiera den."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Anslut säkerhetsnyckeln till din dators USB-port och klicka på knappen \"Läs nyckel\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Om säkerhetsnyckeln har en knapp, tryck på den."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Spara formuläret."
+  },
+  "twoFactorFido2Warning": {
+    "message": "På grund av plattformsbegränsningar kan FIDO2 inte användas i alla Bitwarden-applikationer. Du bör aktivera en annan metod för tvåstegsverifiering så att du kan komma åt ditt konto när FIDO2 inte kan användas. Plattformar som stöds:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Webbvalvet och webbläsartillägg på en stationär eller bärbar dator med en FIDO2-aktiverad webbläsare (Chrome, Opera, Vivaldi eller Firefox med FIDO2 aktiverat)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Väntar på att du ska trycka på knappen på din säkerhetsnyckel"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Klicka på \"Spara\"-knappen nedan för att aktivera denna säkerhetsnyckel för tvåstegsverifiering."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Det gick inte att läsa säkerhetsnyckeln. Försök igen."
   },
   "twoFactorRecoveryYourCode": {

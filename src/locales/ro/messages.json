@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Introduceți cheia de securitate în portul USB al computerului. Dacă are un buton, apăsați-l."
   },
+  "insertFido2": {
+    "message": "Introduceți cheia de securitate în portul USB al computerului. Dacă are un buton, apăsați-l."
+  },
   "loginUnavailable": {
     "message": "Conectare indisponibilă"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "Cheie de securitate FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "Utilizați orice cheie de securitate activată FIDO2 pentru a vă accesa contul."
+  },
+  "fido2Title": {
+    "message": "Cheie de securitate FIDO2"
   },
   "emailTitle": {
     "message": "E-mail"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "Cheie FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Suport NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Sigur doriți să eliminați această cheie de securitate?"
   },
+  "twoFactorFido2Add": {
+    "message": "Adăugare de cheie de securitate FIDO2 în contul dvs."
+  },
+  "removeFido2Confirmation": {
+    "message": "Sigur doriți să eliminați această cheie de securitate?"
+  },
   "readKey": {
     "message": "Citire cheie"
   },
@@ -1306,10 +1330,10 @@
     "message": "Salvați formularul."
   },
   "twoFactorU2fWarning": {
-    "message": "Drept consecință a limitărilor platformei, FIDO U2F nu poate fi utilizat pe toate aplicațiile Bitwarden. Ar trebui să activați un alt furnizor de conectare în două etape pentru a vă accesa contul atunci când FIDO U2F nu se poate utiliza. Platforme acceptate:"
+    "message": "Drept consecință a limitărilor platformei, FIDO2 nu poate fi utilizat pe toate aplicațiile Bitwarden. Ar trebui să activați un alt furnizor de conectare în două etape pentru a vă accesa contul atunci când FIDO2 nu se poate utiliza. Platforme acceptate:"
   },
   "twoFactorU2fSupportWeb": {
-    "message": "Seiful web și extensiile de browser pe un desktop/laptop cu un browser activat U2F (Chrome, Opera, Vivaldi, sau Firefox cu FIDO U2F activat)."
+    "message": "Seiful web și extensiile de browser pe un desktop/laptop cu un browser activat FIDO2 (Chrome, Opera, Vivaldi, sau Firefox cu FIDO2 activat)."
   },
   "twoFactorU2fWaiting": {
     "message": "Vă așteptăm ca să atingeți butonul de pe cheia de securitate"
@@ -1318,6 +1342,33 @@
     "message": "Clicați pe butonul \"Salvare\" mai jos pentru a activa cheia de securitate de conectarea în două etape."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "A apărut o problemă la citirea cheii de securitate. Încercați din nou."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Dați cheii de securitate un nume prietenos pentru a o identifica."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Conectați cheia de securitate la portul USB al computerului și clicați pe butonul \"Citire cheie\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Când cheia de securitate are un buton, atingeți-l."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Salvați formularul."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Drept consecință a limitărilor platformei, FIDO U2F nu poate fi utilizat pe toate aplicațiile Bitwarden. Ar trebui să activați un alt furnizor de conectare în două etape pentru a vă accesa contul atunci când FIDO U2F nu se poate utiliza. Platforme acceptate:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Seiful web și extensiile de browser pe un desktop/laptop cu un browser activat U2F (Chrome, Opera, Vivaldi, sau Firefox cu FIDO U2F activat)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Vă așteptăm ca să atingeți butonul de pe cheia de securitate"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Clicați pe butonul \"Salvare\" mai jos pentru a activa cheia de securitate de conectarea în două etape."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "A apărut o problemă la citirea cheii de securitate. Încercați din nou."
   },
   "twoFactorRecoveryYourCode": {

@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "將您的安全金鑰插入電腦的 USB 連接埠，然後按一下它的按鈕（如有的話）。"
   },
+  "insertFido2": {
+    "message": "將您的安全金鑰插入電腦的 USB 連接埠，然後按一下它的按鈕（如有的話）。"
+  },
   "loginUnavailable": {
     "message": "無法登入"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F 安全金鑰"
+  },
+  "fido2Desc": {
+    "message": "使用任何啟用了 FIDO2 的安全金鑰來存取您的帳戶。"
+  },
+  "fido2Title": {
+    "message": "FIDO2 安全金鑰"
   },
   "emailTitle": {
     "message": "電子郵件"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Key $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC 支援"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "您確定要移除這把安全金鑰嗎？"
   },
+  "twoFactorFido2Add": {
+    "message": "在您的帳戶中新增 FIDO2 安全金鑰"
+  },
+  "removeFido2Confirmation": {
+    "message": "您確定要移除這把安全金鑰嗎？"
+  },
   "readKey": {
     "message": "讀取金鑰"
   },
@@ -1318,6 +1342,33 @@
     "message": "按下底下的「儲存」按鈕，啟用此加密鑰匙以用於兩步驟登入。"
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "讀取安全金鑰時發生問題。請重試。"
+  },
+  "twoFactorFido2GiveName": {
+    "message": "給安全鑰匙起一個友好的名稱，以方便識別。"
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "請將安全鑰匙插入您電腦的 USB 埠，並按下「讀取鑰匙」按鈕。"
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "如果安全鑰匙有按鈕，請按下去。"
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "儲存表單"
+  },
+  "twoFactorFido2Warning": {
+    "message": "由於平台限制，無法於所有 Bitwarden 應用程式使用 FIDO2。請開啟另一套兩階段登入供應者，以確保 FIDO2 無法使用時還能存取帳號。支援的平台有："
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "支援 U2F 的桌面/筆記本電腦上的網頁密碼庫和啓用 FIDO2 的瀏覽器 (Chrome, Opera, Vivaldi, 或啓用了 FIDO2 的 Firefox)。"
+  },
+  "twoFactorFido2Waiting": {
+    "message": "等待您按下加密鑰匙上的按鈕"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "按下底下的「儲存」按鈕，啟用此加密鑰匙以用於兩步驟登入。"
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "讀取安全金鑰時發生問題。請重試。"
   },
   "twoFactorRecoveryYourCode": {

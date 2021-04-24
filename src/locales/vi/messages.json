@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Vui lòng cắm chìa khóa bảo mật vào cổng USB của máy tính bạn và bấm nút trên chìa khóa nếu có."
   },
+  "insertFido2": {
+    "message": "Vui lòng cắm chìa khóa bảo mật vào cổng USB của máy tính bạn và bấm nút trên chìa khóa nếu có."
+  },
   "loginUnavailable": {
     "message": "Đăng nhập không hoạt động"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "Mật khẩu FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "Sử dụng bất kỳ mật khẩu FIDO2 nào để truy cập tài khoản của bạn."
+  },
+  "fido2Title": {
+    "message": "Mật khẩu FIDO2"
   },
   "emailTitle": {
     "message": "Email"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "Thiết bị FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Hỗ trợ NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Bạn có chắc chắn muốn xóa khóa bảo mật này?"
   },
+  "twoFactorFido2Add": {
+    "message": "Add a FIDO2 security key to your account"
+  },
+  "removeFido2Confirmation": {
+    "message": "Bạn có chắc chắn muốn xóa khóa bảo mật này?"
+  },
   "readKey": {
     "message": "Read Key"
   },
@@ -1318,6 +1342,33 @@
     "message": "Click the \"Save\" button below to enable this security key for two-step login."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "There was a problem reading the security key. Try again."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Đặt cho Yubikey một cái tên để nhận diện."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Cắm khóa bảo mật vào cổng USB và bấm nút trên khóa."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Nếu khóa bảo mật có nút, hãy chạm vào."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Lưu mẫu."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Do giới hạn của hệ điều hành, FIDO2 KHÔNG thể xài hết được trên các ứng dụng Bitwarden. Bạn nên đăng ký thêm một phương pháp xác thực 2 bước khác khi mà FIDO2 không xài được. Hỗ trợ hệ điều hành:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Web vault and browser extensions on a desktop/laptop with a FIDO2 enabled browser (Chrome, Opera, Vivaldi, or Firefox with FIDO2 enabled)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Waiting for you to touch the button on your security key"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Click the \"Save\" button below to enable this security key for two-step login."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "There was a problem reading the security key. Try again."
   },
   "twoFactorRecoveryYourCode": {

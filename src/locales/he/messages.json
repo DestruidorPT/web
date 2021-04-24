@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "הכנס את מפתח האבטחה שלך אל כניסת ה-USB במחשבך. אם יש לו כפתור, לחץ עליו."
   },
+  "insertFido2": {
+    "message": "הכנס את מפתח האבטחה שלך אל כניסת ה-USB במחשבך. אם יש לו כפתור, לחץ עליו."
+  },
   "loginUnavailable": {
     "message": "פרטי כניסה לא זמינים"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "מפתח אבטחה FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "השתמש בכל מפתח אבטחה התומך בFIDO2 עבור גישה לחשבונך."
+  },
+  "fido2Title": {
+    "message": "מפתח אבטחה FIDO2"
   },
   "emailTitle": {
     "message": "אימייל"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "מפתח FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "תמיכה ב-NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "האם אתה בטוח שברצונך למחוק מפתח אבטחה זה?"
   },
+  "twoFactorFido2Add": {
+    "message": "הוסף מפתח אבטחה מסוג FIDO2 לחשבון שלך"
+  },
+  "removeFido2Confirmation": {
+    "message": "האם אתה בטוח שברצונך למחוק מפתח אבטחה זה?"
+  },
   "readKey": {
     "message": "קרא מפתח"
   },
@@ -1318,6 +1342,33 @@
     "message": "לחץ על כפתור \"שמירה\" בכדי לאפשר כניסה דו-שלבית בעזרת מפתח אבטחה זה."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "היתה בעיה בקריאת מפתח האבטחה. נסה בשנית."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "הענק שם ידידותי למפתח האבטחה עבור זיהוי קל ומהיר."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "חבר את מפתח האבטחה לכניסת הUSB במחשב שלך, ולחץ על הכפתור \"קרא מפתח\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "אם למפתח האבטחה יש כפתור, לחץ עליו."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "שמור את הטופס."
+  },
+  "twoFactorFido2Warning": {
+    "message": "עקב מגבלות פלטפורמה, לא ניתן להשתמש בבFIDO2 בכל האפליקציות של Bitwarden. עליך לאפשר ספק כניסה דו-שלבית נוסף למקרה שבו הבFIDO2 שלך לא זמין. פלטפורמות נתמכות:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "כספת ברשת ותוספי אבטחה למחשב נייח\\נייד עם דפדפן תומך בFIDO2 (כרום, אופרה, Vivaldi, או פיירפוקס עם תמיכה בבFIDO2)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "ממתין ללחיצה על כפתור במפתח האבטחה שלך"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "לחץ על כפתור \"שמירה\" בכדי לאפשר כניסה דו-שלבית בעזרת מפתח אבטחה זה."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "היתה בעיה בקריאת מפתח האבטחה. נסה בשנית."
   },
   "twoFactorRecoveryYourCode": {

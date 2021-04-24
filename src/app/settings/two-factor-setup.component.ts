@@ -24,6 +24,7 @@ import { TwoFactorDuoComponent } from './two-factor-duo.component';
 import { TwoFactorEmailComponent } from './two-factor-email.component';
 import { TwoFactorRecoveryComponent } from './two-factor-recovery.component';
 import { TwoFactorU2fComponent } from './two-factor-u2f.component';
+import { TwoFactorFido2Component } from './two-factor-fido2.component';
 import { TwoFactorYubiKeyComponent } from './two-factor-yubikey.component';
 
 @Component({
@@ -35,6 +36,7 @@ export class TwoFactorSetupComponent implements OnInit {
     @ViewChild('authenticatorTemplate', { read: ViewContainerRef, static: true }) authenticatorModalRef: ViewContainerRef;
     @ViewChild('yubikeyTemplate', { read: ViewContainerRef, static: true }) yubikeyModalRef: ViewContainerRef;
     @ViewChild('u2fTemplate', { read: ViewContainerRef, static: true }) u2fModalRef: ViewContainerRef;
+    @ViewChild('fido2Template', { read: ViewContainerRef, static: true }) fido2ModalRef: ViewContainerRef;
     @ViewChild('duoTemplate', { read: ViewContainerRef, static: true }) duoModalRef: ViewContainerRef;
     @ViewChild('emailTemplate', { read: ViewContainerRef, static: true }) emailModalRef: ViewContainerRef;
 
@@ -121,6 +123,13 @@ export class TwoFactorSetupComponent implements OnInit {
                 const u2fComp = this.openModal(this.u2fModalRef, TwoFactorU2fComponent);
                 u2fComp.onUpdated.subscribe((enabled: boolean) => {
                     this.updateStatus(enabled, TwoFactorProviderType.U2f);
+                });
+                break;
+            case TwoFactorProviderType.Fido2:
+                //Open the FIDO2 two-factor
+                const fido2Comp = this.openModal(this.fido2ModalRef, TwoFactorFido2Component);
+                fido2Comp.onUpdated.subscribe((enabled: boolean) => {
+                    this.updateStatus(enabled, TwoFactorProviderType.Fido2);
                 });
                 break;
             default:

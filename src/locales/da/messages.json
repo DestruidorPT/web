@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Indsæt din sikkerhedsnøgle i din computers USB-port. Hvis den har en knap, tryk på den."
   },
+  "insertFido2": {
+    "message": "Indsæt din sikkerhedsnøgle i din computers USB-port. Hvis den har en knap, tryk på den."
+  },
   "loginUnavailable": {
     "message": "Login ikke tilgængelig"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F sikkerhedsnøgle"
+  },
+  "fido2Desc": {
+    "message": "Brug hvilken som helst FIDO2-aktiveret sikkerhedsnøgle til at få adgang til din konto."
+  },
+  "fido2Title": {
+    "message": "FIDO2 sikkerhedsnøgle"
   },
   "emailTitle": {
     "message": "E-mail"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 nøgle $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC understøttelse"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Er du sikker på, at du vil fjerne denne sikkerhedsnøgle?"
   },
+  "twoFactorFido2Add": {
+    "message": "Tilføj en FIDO2 sikkerhedsnøgle til din konto"
+  },
+  "removeFido2Confirmation": {
+    "message": "Er du sikker på, at du vil fjerne denne sikkerhedsnøgle?"
+  },
   "readKey": {
     "message": "Læs nøgle"
   },
@@ -1318,6 +1342,33 @@
     "message": "Klik på \"Gem\" knappen nedenfor for at aktivere denne sikkerhedsnøgle til to-trins login."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Der opstod et problem med at læse sikkerhedsnøglen. Prøv igen."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Giv sikkerhedsnøglen et brugervenligt navn til at identificere den."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Sæt sikkerhedsnøglen i computerens USB-port, og klik på knappen \"Læs nøgle\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Hvis sikkerhedsnøglen har en knap, skal du trykke på den."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Gem formularen."
+  },
+  "twoFactorFido2Warning": {
+    "message": "På grund af platformbegrænsninger kan FIDO2 ikke bruges på alle Bitwarden-applikationer. Du bør aktivere en anden to-trins login udbyder, så du kan få adgang til din konto, når FIDO2 ikke kan benyttes. Understøttede platforme:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Web-boks og browserudvidelser på en desktop/laptop med en FIDO2-aktiveret browser (Chrome, Opera, Vivaldi eller Firefox med FIDO2 aktiveret)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Venter på at du trykker på knappen på din sikkerhedsnøgle"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Klik på \"Gem\" knappen nedenfor for at aktivere denne sikkerhedsnøgle til to-trins login."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Der opstod et problem med at læse sikkerhedsnøglen. Prøv igen."
   },
   "twoFactorRecoveryYourCode": {

@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Introduïu la vostra clau de seguretat al port USB de l'ordinador. Si té un botó, premeu-lo."
   },
+  "insertFido2": {
+    "message": "Introduïu la vostra clau de seguretat al port USB de l'ordinador. Si té un botó, premeu-lo."
+  },
   "loginUnavailable": {
     "message": "Inici de sessió no disponible"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "Clau de seguretat FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "Utilitzeu qualsevol clau de seguretat habilitada per FIDO2 per accedir al vostre compte."
+  },
+  "fido2Title": {
+    "message": "Clau de seguretat FIDO2"
   },
   "emailTitle": {
     "message": "Correu electrònic"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "Clau FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Suport NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Segur que voleu suprimir aquesta clau de seguretat?"
   },
+  "twoFactorFido2Add": {
+    "message": "Afegeix una clau de seguretat FIDO2 al vostre compte"
+  },
+  "removeFido2Confirmation": {
+    "message": "Segur que voleu suprimir aquesta clau de seguretat?"
+  },
   "readKey": {
     "message": "Llegeix la clau"
   },
@@ -1318,6 +1342,33 @@
     "message": "Feu clic al botó \"Guarda\" que apareix a continuació per habilitar aquesta clau de seguretat per iniciar sessió en dues passes."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Hi ha hagut un problema en llegir la clau de seguretat. Torneu-ho a provar."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Doneu un nom amigable a la clau de seguretat per identificar-la."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Connecteu la clau de seguretat al port USB de l'ordinador i feu clic al botó \"Llegeix la clau\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Si la clau de seguretat té un botó, toqueu-lo."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Guardeu el formulari."
+  },
+  "twoFactorFido2Warning": {
+    "message": "A causa de les limitacions de la plataforma, FIDO2 no es pot utilitzar en totes les aplicacions de Bitwarden. Heu d'habilitar un altre proveïdor d'inici de sessió en dues passes perquè pugueu accedir al vostre compte quan FIDO2 no es puga utilitzar. Plataformes compatibles:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Caixa forta web i extensions de navegador en un escriptori/portàtil amb un navegador compatible amb FIDO2 (Chrome, Opera, Vivaldi, o Firefox amb FIDO2 activat)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "S'està esperant que toqueu el botó de la vostra clau de seguretat"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Feu clic al botó \"Guarda\" que apareix a continuació per habilitar aquesta clau de seguretat per iniciar sessió en dues passes."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Hi ha hagut un problema en llegir la clau de seguretat. Torneu-ho a provar."
   },
   "twoFactorRecoveryYourCode": {

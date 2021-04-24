@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "보안 키를 컴퓨터의 USB 포트에 삽입하고 버튼이 있는 경우 누르세요."
   },
+  "insertFido2": {
+    "message": "보안 키를 컴퓨터의 USB 포트에 삽입하고 버튼이 있는 경우 누르세요."
+  },
   "loginUnavailable": {
     "message": "로그인 불가능"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F 보안 키"
+  },
+  "fido2Desc": {
+    "message": "FIDO2가 활성화된 보안 키를 사용하여 계정에 접근하세요."
+  },
+  "fido2Title": {
+    "message": "FIDO2 보안 키"
   },
   "emailTitle": {
     "message": "이메일"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Key $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC 지원"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "정말로 이 보안 키를 제거하시겠습니까?"
   },
+  "twoFactorFido2Add": {
+    "message": "계정에 FIDO2 보안 키 추가"
+  },
+  "removeFido2Confirmation": {
+    "message": "정말로 이 보안 키를 제거하시겠습니까?"
+  },
   "readKey": {
     "message": "키 읽기"
   },
@@ -1318,6 +1342,33 @@
     "message": "2단계 로그인에 이 보안 키를 사용하려면 아래의 \"저장\" 버튼을 클릭하십시오"
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "보안 키를 읽어오는데 문제가 발생했습니다. 다시 시도해보십시오."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "보안 키를 식별할 수 있는 친근한 이름을 지정하십시오."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "컴퓨터의 USB 포트에 보안 키를 삽입하고 \"키 읽기\" 버튼을 클릭하십시오."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "보안 키에 버튼이 있다면, 터치하십시오"
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "폼 저장하기"
+  },
+  "twoFactorFido2Warning": {
+    "message": "플랫폼 제한으로 인해, 모든 Bitwawrden 애플리케이션에서 FIDO2를 사용할 수 없습니다. FIDO2를 사용할 수 없을 때 계정에 액세스할 수 있도록 다른 2단계 로그인 제공자를 활성화하십시오. 지원하는 플랫폼:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "FIDO2 지원 브라우저가 있는 데스크탑/랩탑의 웹 보관함 및 브라우저 확장 (FIDO2가 활성화된 Chrome, Opera, Vivaldi 또는 Firefox 사용)"
+  },
+  "twoFactorFido2Waiting": {
+    "message": "보안 키 버튼 터치를 기다리는 중"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "2단계 로그인에 이 보안 키를 사용하려면 아래의 \"저장\" 버튼을 클릭하십시오"
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "보안 키를 읽어오는데 문제가 발생했습니다. 다시 시도해보십시오."
   },
   "twoFactorRecoveryYourCode": {

@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Güvenlik anahtarınızı bilgisayarınızın USB portuna takın. Bir düğmesi varsa dokunun."
   },
+  "insertFido2": {
+    "message": "Güvenlik anahtarınızı bilgisayarınızın USB portuna takın. Bir düğmesi varsa dokunun."
+  },
   "loginUnavailable": {
     "message": "Login Unavailable"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F Güvenlik Anahtarı"
+  },
+  "fido2Desc": {
+    "message": "Hesabınıza erişmek için herhangi bir FIDO2 etkin güvenlik anahtarı kullanın."
+  },
+  "fido2Title": {
+    "message": "FIDO2 Güvenlik Anahtarı"
   },
   "emailTitle": {
     "message": "E-posta"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Anahtarı: $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC Desteği"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Bu güvenlik anahtarını kaldırmak istediğinizden emin misiniz?"
   },
+  "twoFactorFido2Add": {
+    "message": "Hesabınıza FIDO2 güvenlik anahtarı ekleyin"
+  },
+  "removeFido2Confirmation": {
+    "message": "Bu güvenlik anahtarını kaldırmak istediğinizden emin misiniz?"
+  },
   "readKey": {
     "message": "Anahtarı Oku"
   },
@@ -1318,6 +1342,33 @@
     "message": "İki adımlı giriş için bu güvenlik anahtarını etkinleştirmek için aşağıdaki \"Kaydet\" butonuna tıklayın."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Güvenlik anahtarını okurken bir sorun oluştu. Tekrar deneyin."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Güvenlik anahtarını tanımlamak için kolay bir isim verin."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Güvenlik anahtarını bilgisayarınızın USB portuna takın ve \"Anahtarı Oku\" düğmesine tıklayın."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Güvenlik anahtarının bir düğmesi varsa, ona dokunun."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Formu kaydedin."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Platform sınırlamaları nedeniyle, FIDO2 tüm Bitwarden uygulamalarında kullanılamaz. Başka bir iki adımlı giriş sağlayıcısını etkinleştirmeniz gerekir, böylece FIDO2 kullanılamadığında hesabınıza erişebilirsiniz. Desteklenen platformlar:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Web kasası ve FIDO2 etkinleştirilmiş bir tarayıcıya (FIDO2 etkinleştirilmiş Chrome, Opera, Vivaldi veya Firefox) sahip bir masaüstü/dizüstü bilgisayarda tarayıcı uzantıları."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Güvenlik anahtarınızdaki düğmeye dokunmanız bekleniyor"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "İki adımlı giriş için bu güvenlik anahtarını etkinleştirmek için aşağıdaki \"Kaydet\" butonuna tıklayın."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Güvenlik anahtarını okurken bir sorun oluştu. Tekrar deneyin."
   },
   "twoFactorRecoveryYourCode": {

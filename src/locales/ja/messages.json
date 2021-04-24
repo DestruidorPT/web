@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "セキュリティキーを USB ポートに挿入し、ボタンがある場合はボタンをタッチしてください。"
   },
+  "insertFido2": {
+    "message": "セキュリティキーを USB ポートに挿入し、ボタンがある場合はボタンをタッチしてください。"
+  },
   "loginUnavailable": {
     "message": "ログインできません。"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F セキュリティキー"
+  },
+  "fido2Desc": {
+    "message": "FIDO2 が有効なセキュリティキーを使ってアカウントにアクセスできます。"
+  },
+  "fido2Title": {
+    "message": "FIDO2 セキュリティキー"
   },
   "emailTitle": {
     "message": "メールアドレス"
@@ -1234,7 +1243,16 @@
     }
   },
   "u2fkeyX": {
-    "message": "U2F対応キー $INDEX$",
+    "message": "FIDO2対応キー $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "fido2keyX": {
+    "message": "FIDO2対応キー $INDEX$",
     "placeholders": {
       "index": {
         "content": "$1",
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "本当にこのセキュリティキーを削除しますか？"
   },
+  "twoFactorFido2Add": {
+    "message": "FIDO2対応キーをアカウントに追加"
+  },
+  "removeFido2Confirmation": {
+    "message": "本当にこのセキュリティキーを削除しますか？"
+  },
   "readKey": {
     "message": "読み取りキー"
   },
@@ -1318,6 +1342,33 @@
     "message": "このセキュリティキーを二段階認証で有効化するには、「保存」ボタンをクリックして下さい。"
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "セキュリティキーの読み取り中に問題が発生しました。もう一度やり直して下さい。"
+  },
+  "twoFactorFido2GiveName": {
+    "message": "セキュリティキーを識別するための名前を追加します。"
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "セキュリティキーをコンピューターのUSBポートに差し込み、「読み取りキー」ボタンをクリックしてください。"
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "セキュリティキーにボタンがある場合、タッチして下さい。"
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "フォームを保存します。"
+  },
+  "twoFactorFido2Warning": {
+    "message": "プラットフォームの制限によりFIDO2対応キーはBitwardenのアプリケーションのすべてで使用できるわけではありません。他の二段階認証プロバイダを有効化しておくと、FIDO2対応キーが使用できない場合でもアカウントにアクセスできます。サポートされるプラットフォーム:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "ウェブ保管庫とFIDO2に対応したブラウザ(Chrome、Opera、Vivaldi、Firefox)のブラウザ拡張機能"
+  },
+  "twoFactorFido2Waiting": {
+    "message": "セキュリティキーのボタンがタッチされるのを待っています。"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "このセキュリティキーを二段階認証で有効化するには、「保存」ボタンをクリックして下さい。"
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "セキュリティキーの読み取り中に問題が発生しました。もう一度やり直して下さい。"
   },
   "twoFactorRecoveryYourCode": {

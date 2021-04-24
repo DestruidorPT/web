@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Kytke todennuslaitteesi tietokoneen USB-porttiin ja jos laitteessa on painike, paina sitä."
   },
+  "insertFido2": {
+    "message": "Kytke todennuslaitteesi tietokoneen USB-porttiin ja jos laitteessa on painike, paina sitä."
+  },
   "loginUnavailable": {
     "message": "Kirjautuminen ei ole käytettävissä"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F ‑todennuslaite"
+  },
+  "fido2Desc": {
+    "message": "Käytä tilisi avaukseen mitä tahansa FIDO2 ‑yhteensopivaa todennuslaitetta."
+  },
+  "fido2Title": {
+    "message": "FIDO2 ‑todennuslaite"
   },
   "emailTitle": {
     "message": "Sähköposti"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC-tuki"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Haluatko varmasti poistaa todennuslaitteen?"
   },
+  "twoFactorFido2Add": {
+    "message": "Lisää tilillesi FIDO2 -todennuslaite"
+  },
+  "removeFido2Confirmation": {
+    "message": "Haluatko varmasti poistaa todennuslaitteen?"
+  },
   "readKey": {
     "message": "Lue todennuslaite"
   },
@@ -1318,6 +1342,33 @@
     "message": "Klikkaa alta \"Tallenna\" käyttääksesi tätä todennuslaitetta kaksivaiheiseen kirjautumiseen."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Todennuslaittetta luettaessa havaittiin ongelma. Yritä uudelleen."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Anna todennuslaitteelle helposti tunnistettava nimi."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Kytke todennuslaitteesi tietokoneen USB-porttiin ja klikkaa \"Lue todennuslaite\" -painiketta."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Jos todennuslaitteessa on painike, paina sitä."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Tallenna lomake."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Alustan rajoitusten vuoksi, FIDO2 -todennuslaitteen käyttö ei ole mahdollista kaikissa Bitwarden-sovelluksissa. Sinun tulisi ottaa käyttöön eri kaksivaiheisen kirjautumisen todennusmenetelmä, jotta pääset tilillesi myös silloin kun FIDO2 -laitteen käyttö ei onnistu. Tuetut alustat:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Verkkoholvi ja selainlaajennukset pöytäkoneissa/kannettavissa, joissa on FIDO2-tekniikkaa tukeva selain (Chrome, Opera, Vivaldi tai Firefox FIDO2 käyttöön otettuna)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Odotetaan, että painat todennuslaitteesi painiketta"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Klikkaa alta \"Tallenna\" käyttääksesi tätä todennuslaitetta kaksivaiheiseen kirjautumiseen."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Todennuslaittetta luettaessa havaittiin ongelma. Yritä uudelleen."
   },
   "twoFactorRecoveryYourCode": {

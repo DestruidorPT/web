@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Sisesta oma turvaline võti arvuti USB porti. Kui sellel on nupp, siis vajuta seda."
   },
+  "insertFido2": {
+    "message": "Sisesta oma turvaline võti arvuti USB porti. Kui sellel on nupp, siis vajuta seda."
+  },
   "loginUnavailable": {
     "message": "Sisselogimine ei ole saadaval"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F Turvaline võti"
+  },
+  "fido2Desc": {
+    "message": "Kasuta mistahes FIDO2 toetavad turvalist võtit, et oma kontole ligi pääseda."
+  },
+  "fido2Title": {
+    "message": "FIDO2 Turvaline võti"
   },
   "emailTitle": {
     "message": "E-post"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 võtme $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC tugi"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Oled kindel, et soovid selle turvavõtme eemaldada?"
   },
+  "twoFactorFido2Add": {
+    "message": "Lisa oma kontole FIDO2 turvavõti"
+  },
+  "removeFido2Confirmation": {
+    "message": "Oled kindel, et soovid selle turvavõtme eemaldada?"
+  },
   "readKey": {
     "message": "Loe võtit"
   },
@@ -1306,10 +1330,10 @@
     "message": "Salvesta vorm."
   },
   "twoFactorU2fWarning": {
-    "message": "Mõnede platvormi piirangute tõttu ei saa FIDO U2F-i kõikide Bitwardeni rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus FIDO U2F-i ei saa kasutada. Toetatud platvormid:"
+    "message": "Mõnede platvormi piirangute tõttu ei saa FIDO2-i kõikide Bitwardeni rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus FIDO2-i ei saa kasutada. Toetatud platvormid:"
   },
   "twoFactorU2fSupportWeb": {
-    "message": "Veebihoidla ja brauseri lisad töölaual/sülearvutis kus on U2F toetusega brauser (Chrome, Opera, Vivaldi või Firefox, kus on FIDO U2F sisse lülitatud)."
+    "message": "Veebihoidla ja brauseri lisad töölaual/sülearvutis kus on FIDO2 toetusega brauser (Chrome, Opera, Vivaldi või Firefox, kus on FIDO2 sisse lülitatud)."
   },
   "twoFactorU2fWaiting": {
     "message": "Ootame, kuni puudutad turvavõtmel olevat nuppu"
@@ -1318,6 +1342,33 @@
     "message": "Kliki all olevale \"Salvesta\" nupule, et kaheastmeline kinnitamine läbi selle turvavõtme sisse lülitada."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Turvavõtme lugemisel tekkis tõrge. Proovi uuesti."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Anna turvavõtmele lihtne nimi, et seda oleks lihtsam ära tunda."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Sisesta turvavõti arvuti USB pessa ning kliki \"Loe võtit\" nupul."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Kui turvavõtmel on nupp, siis vajuta seda."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Salvesta vorm."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Mõnede platvormi piirangute tõttu ei saa FIDO U2F-i kõikide Bitwardeni rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus FIDO2-i ei saa kasutada. Toetatud platvormid:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Veebihoidla ja brauseri lisad töölaual/sülearvutis kus on U2F toetusega brauser (Chrome, Opera, Vivaldi või Firefox, kus on FIDO2 sisse lülitatud)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Ootame, kuni puudutad turvavõtmel olevat nuppu"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Kliki all olevale \"Salvesta\" nupule, et kaheastmeline kinnitamine läbi selle turvavõtme sisse lülitada."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Turvavõtme lugemisel tekkis tõrge. Proovi uuesti."
   },
   "twoFactorRecoveryYourCode": {

@@ -44,6 +44,17 @@
                             <img src="../../images/u2fkey.jpg" alt="" class="rounded img-fluid mb-3">
                         </ng-container>
                     </ng-container>
+                    <ng-container *ngIf="selectedProviderType === providerType.Fido2">
+                        <ng-container>
+                            <p class="text-center">{{'insertFido2' | i18n}}</p>
+                            <img src="../../images/fido2key.jpg" alt="" class="rounded img-fluid mb-3">
+                        </ng-container>
+                        <p class="text-center" *ngIf="!fido2Ready">
+                            <i class="fa fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}"
+                                aria-hidden="true"></i>
+                            <span class="sr-only">{{'loading' | i18n}}</span>
+                        </p>
+                    </ng-container>
                     <ng-container *ngIf="selectedProviderType === providerType.Duo ||
                         selectedProviderType === providerType.OrganizationDuo">
                         <div id="duo-frame" class="mb-3">
@@ -66,7 +77,13 @@
                         <button type="submit" class="btn btn-primary btn-block btn-submit" [disabled]="form.loading"
                             *ngIf="selectedProviderType != null && selectedProviderType !== providerType.Duo && 
                         selectedProviderType !== providerType.OrganizationDuo && selectedProviderType !== providerType.U2f">
-                            <span>
+                            <span *ngIf="selectedProviderType === providerType.Fido2 && authFido2TimeOut > 0">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> {{ authFido2TimeOut/1000 }}
+                            </span>
+                            <span *ngIf="selectedProviderType === providerType.Fido2 && authFido2TimeOut <= 0">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> Start Again Fido2{{'startFido2' | i18n}}
+                            </span>
+                            <span *ngIf="selectedProviderType !== providerType.Fido2">
                                 <i class="fa fa-sign-in" aria-hidden="true"></i> {{'continue' | i18n}}
                             </span>
                             <i class="fa fa-spinner fa-spin" title="{{'loading' | i18n}}" aria-hidden="true"></i>

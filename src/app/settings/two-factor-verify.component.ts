@@ -68,6 +68,9 @@ export class TwoFactorVerifyComponent {
                 case TwoFactorProviderType.Yubikey:
                     this.formPromise = this.apiService.getTwoFactorYubiKey(request);
                     break;
+                case TwoFactorProviderType.Fido2:
+                    this.formPromise = this.apiService.getTwoFactorFido2(request); // Get the information of the FIDO2 in the user account
+                    break;
             }
 
             const response = await this.formPromise;

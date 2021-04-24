@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Inserta tu llave de seguridad en el puerto USB de tu equipo. Si tiene un botón, púlsalo."
   },
+  "insertFido2": {
+    "message": "Inserta tu llave de seguridad en el puerto USB de tu equipo. Si tiene un botón, púlsalo."
+  },
   "loginUnavailable": {
     "message": "Entrada no disponible"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "Llave de seguridad FIDO U2F"
+  },
+  "fido2Desc": {
+    "message": "Usa cualquier llave de seguridad FIDO2 habilitada para acceder a tu cuenta."
+  },
+  "fido2Title": {
+    "message": "Llave de seguridad FIDO2"
   },
   "emailTitle": {
     "message": "Correo electrónico"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "Llave FIDO2 $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Soporte NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "¿Estás seguro de que quieres eliminar esta clave de seguridad?"
   },
+  "twoFactorFido2Add": {
+    "message": "Agregar una clave de seguridad Fido2 a tu cuenta"
+  },
+  "removeFido2Confirmation": {
+    "message": "¿Estás seguro de que quieres eliminar esta clave de seguridad?"
+  },
   "readKey": {
     "message": "Leer llave"
   },
@@ -1318,6 +1342,33 @@
     "message": "Haz clic en el botón \"guardar\" para habilitar esta  llave de seguridad para el inicio de sesión de dos pasos."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Hubo un problema al leer la llave de seguridad. Inténtalo de nuevo."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Asigna un nombre descriptivo a la llave de seguridad."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Conecta la llave de seguridad al puerto USB de tu ordenador y haz clic en el botón \"Leer llave\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Si la clave de seguridad tiene un botón, tócalo."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Guardar el formulario."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Debido a limitaciones de la plataforma, FIDO2 no puede ser usado en todas las aplicaciones de Bitwarden. Deberías habilitar otro proveedor de inicio de sesión de dos pasos, para que puedas acceder a tu cuenta cuando FIDO2 no pueda ser utilizado. Plataformas soportadas:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Caja fuerte web y extensiones de navegador en un escritorio/portátil con un navegador compatible con FIDO2 (Chrome, Opera, Vivaldi, o Firefox con FIDO2 activado)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Esperando a que toques el botón de tu llave de seguridad"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Haz clic en el botón \"guardar\" para habilitar esta  llave de seguridad para el inicio de sesión de dos pasos."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Hubo un problema al leer la llave de seguridad. Inténtalo de nuevo."
   },
   "twoFactorRecoveryYourCode": {

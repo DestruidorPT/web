@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Vložte váš bezpečnostný kľúč do USB portu počítača. Ak má tlačidlo, stlačte ho."
   },
+  "insertFido2": {
+    "message": "Vložte váš bezpečnostný kľúč do USB portu počítača. Ak má tlačidlo, stlačte ho."
+  },
   "loginUnavailable": {
     "message": "Prihlásenie nedostupné"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F bezpečnostný kľúč"
+  },
+  "fido2Desc": {
+    "message": "Použiť akýkoľvek FIDO2 bezpečnostný kľúč pre prístup k vášmu účtu."
+  },
+  "fido2Title": {
+    "message": "FIDO2 bezpečnostný kľúč"
   },
   "emailTitle": {
     "message": "Email"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 kľúč $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "Podpora NFC"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Naozaj chcete odstrániť tento bezpečnostný kľúč?"
   },
+  "twoFactorFido2Add": {
+    "message": "Pridajte FIDO2 kľúč k vášmu účtu"
+  },
+  "removeFido2Confirmation": {
+    "message": "Naozaj chcete odstrániť tento bezpečnostný kľúč?"
+  },
   "readKey": {
     "message": "Načítať kľúč"
   },
@@ -1318,6 +1342,33 @@
     "message": "Kliknite na tlačidlo \"Uložiť\" pre povolenie bezpečnostného kľúča pre dvojstupňové prihlásenie."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Problém pri čítaní bezpečnostného kľúča. Skúste to znova."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Zadajte názov pre bezpečnostný kľúč pre jeho ľahšiu identifikáciu."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Zasuňte bezpečnostný kľúč do USB portu na vašom počítači a kliknite na tlačidlo \"Načítať kľúč\"."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Ak má kľúč na sebe tlačidlo, stlačte ho."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Ulož formulár."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Vzhľadom na obmedzenia platform, FIDO2 nemôže byť použitý vo všetkých Bitwarden aplikáciách. Mali by ste povoliť inú formu dvojitého overenia, aby ste sa mohli prihlásiť k svojmu účtu ak nie je možné použiť FIDO2. Podporované platformy:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Webový trezor a rozšírenia prehliadača na pracovnej stanici s prehliadačom podporujúcim FIDO2 (Chrome, Opera, Vivaldi, alebo Firefox so zapnutou podporou FIDO2)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Čaká sa na stlačenie tlačidla na vašom kľúči"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Kliknite na tlačidlo \"Uložiť\" pre povolenie bezpečnostného kľúča pre dvojstupňové prihlásenie."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Problém pri čítaní bezpečnostného kľúča. Skúste to znova."
   },
   "twoFactorRecoveryYourCode": {

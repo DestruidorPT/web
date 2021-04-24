@@ -1,0 +1,117 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="2faFido2Title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="2faFido2Title">
+                    {{'twoStepLogin' | i18n}}
+                    <small>FIDO2</small>
+                </h2>
+                <button type="button" class="close" data-dismiss="modal" appA11yTitle="{{'close' | i18n}}">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <app-two-factor-verify [organizationId]="organizationId" [type]="type" (onAuthed)="auth($event)"
+                *ngIf="!authed">
+            </app-two-factor-verify>
+            <form #form (ngSubmit)="submit()" [appApiAction]="formPromise" ngNativeValidate *ngIf="authed">
+                <div class="modal-body">
+                    <app-callout type="success" title="{{'enabled' | i18n}}" icon="fa-check-circle" *ngIf="enabled">
+                        {{'twoStepLoginProviderEnabled' | i18n}}
+                    </app-callout>
+                    <app-callout type="warning">
+                        <p>{{'twoFactorFido2Warning' | i18n}}</p>
+                        <ul class="mb-0">
+                            <li>{{'twoFactorFido2SupportWeb' | i18n}}</li>
+                        </ul>
+                    </app-callout>
+                    <img src="../../images/two-factor/7.png" class="float-right ml-5" alt="">
+                    <ul class="fa-ul">
+                        <li *ngFor="let k of keys; let i = index" #removeKeyBtn [appApiAction]="k.removePromise">
+                            <i class="fa-li fa fa-key"></i>
+                            <strong *ngIf="!k.name">{{'fido2keyX' | i18n : i + 1}}</strong>
+                            <strong *ngIf="k.name">{{k.name}}</strong> - 
+                            <strong *ngIf="k.authenticatorType">{{k.authenticatorType}}</strong>
+                            <strong *ngIf="k.credentialType">({{k.credentialType}})</strong>
+                            <ng-container *ngIf="!removeKeyBtn.loading">
+                                <ng-container *ngIf="k.compromised">
+                                    <i class="fa fa-fw fa-exclamation-triangle text-warning" aria-hidden="true"
+                                        title="{{'keyCompromised' | i18n}}"></i>
+                                    <span class="sr-only">{{'keyCompromised' | i18n}}</span>
+                                </ng-container>
+                                <ng-container *ngIf="!k.compromised">
+                                    <i class="fa fa-fw fa-check text-success" aria-hidden="true"
+                                        title="{{'enabled' | i18n}}"></i>
+                                    <span class="sr-only">{{'enabled' | i18n}}</span>
+                                </ng-container>
+                            </ng-container>
+                            <ng-container *ngIf="k.id && !k.removePromise">
+                                <i class="fa fa-spin fa-spinner text-muted fa-fw" title="{{'loading' | i18n}}"
+                                    *ngIf="removeKeyBtn.loading" aria-hidden="true"></i>
+                                -
+                                <a href="#" appStopClick (click)="remove(k)">{{'remove' | i18n}}</a>
+                            </ng-container>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>{{'twoFactorFido2Add' | i18n}}:</p>
+                    <ol>
+                        <li>{{'twoFactorFido2GiveName' | i18n}}</li>
+                        <li>{{'twoFactorFido2PlugInReadKey' | i18n}}</li>
+                        <li>{{'twoFactorFido2TouchButton' | i18n}}</li>
+                        <li>{{'twoFactorFido2SaveForm' | i18n}}</li>
+                    </ol>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="name">{{'name' | i18n}}</label>
+                            <input id="name" type="text" name="keyName" class="form-control" [(ngModel)]="keyName">
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="form-group col-6">
+                            <label for="type">Fido2 Type Of Key{{'fido2TypeKey' | i18n}}</label>
+                            <select class="form-control" id="type" name="keyType" [(ngModel)]="keyType">
+                                <option *ngFor="let item of keyTypes" [ngValue]="item.id">{{item.text}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" (click)="readKey()" class="btn btn-outline-secondary mr-2"
+                        [disabled]="readKeyBtn.loading || fido2Listening" #readKeyBtn
+                        [appApiAction]="challengePromise">
+                        {{'readKey' | i18n}}
+                    </button>
+                    <ng-container *ngIf="readKeyBtn.loading">
+                        <i class="fa fa-spinner fa-spin text-muted" aria-hidden="true"></i>
+                    </ng-container>
+                    <ng-container *ngIf="!readKeyBtn.loading">
+                        <ng-container *ngIf="fido2Listening">
+                            <i class="fa fa-spinner fa-spin text-muted" aria-hidden="true"></i>
+                            {{'twoFactorFido2Waiting' | i18n}}...
+                        </ng-container>
+                        <ng-container *ngIf="fido2Request">
+                            <i class="fa fa-check-circle text-success" aria-hidden="true"></i>
+                            {{'twoFactorFido2ClickSave' | i18n}}
+                        </ng-container>
+                        <ng-container *ngIf="fido2Error">
+                            <i class="fa fa-warning text-danger" aria-hidden="true"></i>
+                            {{'twoFactorFido2ProblemReadingTryAgain' | i18n}}
+                        </ng-container>
+                    </ng-container>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" [disabled]="form.loading || !fido2Request">
+                        <i class="fa fa-spinner fa-spin" *ngIf="form.loading" title="{{'loading' | i18n}}"
+                            aria-hidden="true"></i>
+                        <span *ngIf="!form.loading">{{'save' | i18n}}</span>
+                    </button>
+                    <button #disableBtn type="button" class="btn btn-outline-secondary btn-submit"
+                        [appApiAction]="disablePromise" [disabled]="disableBtn.loading" (click)="disable()"
+                        *ngIf="enabled">
+                        <i class="fa fa-spinner fa-spin" title="{{'loading' | i18n}}" aria-hidden="true"></i>
+                        <span>{{'disableAllKeys' | i18n}}</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary"
+                        data-dismiss="modal">{{'close' | i18n}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

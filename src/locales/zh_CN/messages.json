@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "将您的安全钥匙插入计算机的 USB 端口。如果它有一个按钮，按下它。"
   },
+  "insertFido2": {
+    "message": "将您的安全钥匙插入计算机的 USB 端口。如果它有一个按钮，按下它。"
+  },
   "loginUnavailable": {
     "message": "登录不可用"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F 安全钥匙"
+  },
+  "fido2Desc": {
+    "message": "使用任何支持 FIDO2 的安全钥匙来访问您的帐户。"
+  },
+  "fido2Title": {
+    "message": "FIDO2 安全钥匙"
   },
   "emailTitle": {
     "message": "电子邮件"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Key $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC 支持"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "您确认要删除这个安全钥匙吗？"
   },
+  "twoFactorFido2Add": {
+    "message": "在您的帐户中添加 FIDO2 安全钥匙"
+  },
+  "removeFido2Confirmation": {
+    "message": "您确认要删除这个安全钥匙吗？"
+  },
   "readKey": {
     "message": "读取钥匙"
   },
@@ -1318,6 +1342,33 @@
     "message": "单击下面的 \"保存\" 按钮，以启用此安全钥匙进行两步登录。"
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "读取安全钥匙时出现问题，请再试一次。"
+  },
+  "twoFactorFido2GiveName": {
+    "message": "给安全钥匙一个友好的名称来标识它。"
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "将安全钥匙插入计算机的 USB 端口，然后单击 \"读取密钥\" 按钮。"
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "如果安全钥匙有按钮，请按下它。"
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "保存表单。"
+  },
+  "twoFactorFido2Warning": {
+    "message": "由于平台的限制，FIDO2 不能在所有 Bitwarden 应用程序上使用。您应该启用另一个两步登录提供程序，以便在无法使用 FIDO2 时可以访问您的帐户。 支持的平台："
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "台式机 / 笔记本电脑上启用了 FIDO2 的浏览器（Chrome，Opera，Vivaldi 或启用了 FIDO2 的 Firefox）中的网页版密码库和浏览器扩展。"
+  },
+  "twoFactorFido2Waiting": {
+    "message": "等待您按下安全钥匙上的按钮"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "单击下面的 \"保存\" 按钮，以启用此安全钥匙进行两步登录。"
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "读取安全钥匙时出现问题，请再试一次。"
   },
   "twoFactorRecoveryYourCode": {

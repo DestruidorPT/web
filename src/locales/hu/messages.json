@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "A biztonsági kulcs beillesztése a számítógép USB portjába. Ha van rajta gomb, nyomjuk meg."
   },
+  "insertFido2": {
+    "message": "A biztonsági kulcs beillesztése a számítógép USB portjába. Ha van rajta gomb, nyomjuk meg."
+  },
   "loginUnavailable": {
     "message": "A bejelentkezés nem érhető el."
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F Biztonsági kulcs"
+  },
+  "fido2Desc": {
+    "message": "Bármilyen FIDO2 által engedélyezett biztonsági kulcs használata a fiók eléréséhez."
+  },
+  "fido2Title": {
+    "message": "FIDO2 Biztonsági kulcs"
   },
   "emailTitle": {
     "message": "Email cím"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 kulcs $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC támogatás"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Biztosan eltávolításra kerüljön a biztonsági kulcs?"
   },
+  "twoFactorFido2Add": {
+    "message": "Adjunk meg egy FIDO2 biztonsági kulcsot a fiókhoz."
+  },
+  "removeFido2Confirmation": {
+    "message": "Biztosan eltávolításra kerüljön a biztonsági kulcs?"
+  },
   "readKey": {
     "message": "Kulcs beolvasása"
   },
@@ -1318,6 +1342,33 @@
     "message": "Kattintás lentebb a \"Mentés\" gombra a kétlépcsős bejelentkezés biztonsági kulcsának engedélyezéséhez."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Probléma lépett fel a biztonsági kulcs olvasásakor. Próbáljuk újra."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Adjunk egy megfelelő nevet a biztonsági kulcsnak az azonosításhoz."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Helyezzük be a biztonsági kulcsot a számítógép USB portjába ás kattintsunk a \"Kulcs beolvasása\" gombra."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Ha biztonsági kulcsnak van gombja, érintsük meg azt."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Az űrlap mentése."
+  },
+  "twoFactorFido2Warning": {
+    "message": "A platform korlátozások miatt nem lehet minden Bitwarden alkalmazásban FIDO2-t használni. Célszerű engedélyezni egy másik kétlépcsős bejelentkezés szolgáltatót a fiók eléréséhez akkor, ha a FIDO2 nem használható. Támogatott platformok:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Web széf és böngésző kiegészítők asztali gépen / laptopon engedélyezett FIDO2 böngészővel (Chrome, Opera, Vivaldi, vagy Firefox bekapcsolt FIDO2-fel)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Várakozás a biztonsági kulcs gombjának megérintésére."
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Kattintás lentebb a \"Mentés\" gombra a kétlépcsős bejelentkezés biztonsági kulcsának engedélyezéséhez."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Probléma lépett fel a biztonsági kulcs olvasásakor. Próbáljuk újra."
   },
   "twoFactorRecoveryYourCode": {

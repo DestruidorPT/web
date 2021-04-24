@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Insert your security key into your computer's USB port. If it has a button, touch it."
   },
+  "insertFido2": {
+    "message": "Insert your security key into your computer's USB port. If it has a button, touch it."
+  },
   "loginUnavailable": {
     "message": "Login Unavailable"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F Security Key"
+  },
+  "fido2Desc": {
+    "message": "Use any FIDO2 enabled security key to access your account."
+  },
+  "fido2Title": {
+    "message": "FIDO2 Security Key"
   },
   "emailTitle": {
     "message": "E-pošta"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Key $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC podrška"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Are you sure you want to remove this security key?"
   },
+  "twoFactorFido2Add": {
+    "message": "Add a FIDO2 security key to your account"
+  },
+  "removeFido2Confirmation": {
+    "message": "Are you sure you want to remove this security key?"
+  },
   "readKey": {
     "message": "Read Key"
   },
@@ -1318,6 +1342,33 @@
     "message": "Click the \"Save\" button below to enable this security key for two-step login."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "There was a problem reading the security key. Try again."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Give the security key a friendly name to identify it."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Plug the security key into your computer's USB port and click the \"Read Key\" button."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "If the security key has a button, touch it."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Spremite obrazac."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Due to platform limitations, FIDO2 cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO2 cannot be used. Supported platforms:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Web vault and browser extensions on a desktop/laptop with a FIDO2 enabled browser (Chrome, Opera, Vivaldi, or Firefox with FIDO2 enabled)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Waiting for you to touch the button on your security key"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Click the \"Save\" button below to enable this security key for two-step login."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "There was a problem reading the security key. Try again."
   },
   "twoFactorRecoveryYourCode": {

@@ -136,6 +136,7 @@ import { TwoFactorEmailComponent } from './settings/two-factor-email.component';
 import { TwoFactorRecoveryComponent } from './settings/two-factor-recovery.component';
 import { TwoFactorSetupComponent } from './settings/two-factor-setup.component';
 import { TwoFactorU2fComponent } from './settings/two-factor-u2f.component';
+import { TwoFactorFido2Component } from './settings/two-factor-fido2.component';
 import { TwoFactorVerifyComponent } from './settings/two-factor-verify.component';
 import { TwoFactorYubiKeyComponent } from './settings/two-factor-yubikey.component';
 import { UpdateKeyComponent } from './settings/update-key.component';
@@ -398,6 +399,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         TwoFactorRecoveryComponent,
         TwoFactorSetupComponent,
         TwoFactorU2fComponent,
+        TwoFactorFido2Component,
         TwoFactorVerifyComponent,
         TwoFactorYubiKeyComponent,
         UnsecuredWebsitesReportComponent,
@@ -453,6 +455,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         TwoFactorOptionsComponent,
         TwoFactorRecoveryComponent,
         TwoFactorU2fComponent,
+        TwoFactorFido2Component,
         TwoFactorYubiKeyComponent,
         UpdateKeyComponent,
     ],

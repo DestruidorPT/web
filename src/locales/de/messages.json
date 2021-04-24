@@ -680,6 +680,9 @@
   "insertU2f": {
     "message": "Stecken Sie Ihren Sicherheitsschlüssel in einen USB-Port des Computers. Falls dieser einen Knopf hat, drücken Sie ihn."
   },
+  "insertFido2": {
+    "message": "Stecken Sie Ihren Sicherheitsschlüssel in einen USB-Port des Computers. Falls dieser einen Knopf hat, drücken Sie ihn."
+  },
   "loginUnavailable": {
     "message": "Anmeldung nicht verfügbar"
   },
@@ -724,6 +727,12 @@
   },
   "u2fTitle": {
     "message": "FIDO U2F Sicherheitsschlüssel"
+  },
+  "fido2Desc": {
+    "message": "Benutzen Sie einen FIDO2-kompatiblen Sicherheitsschlüssel um auf Ihr Konto zuzugreifen."
+  },
+  "fido2Title": {
+    "message": "FIDO2 Sicherheitsschlüssel"
   },
   "emailTitle": {
     "message": "E-Mail"
@@ -1242,6 +1251,15 @@
       }
     }
   },
+  "fido2keyX": {
+    "message": "FIDO2 Schlüssel $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
   "nfcSupport": {
     "message": "NFC-Unterstützung"
   },
@@ -1287,6 +1305,12 @@
   "removeU2fConfirmation": {
     "message": "Sind Sie sich sicher, dass Sie diesen Sicherheitsschlüssel entfernen möchten?"
   },
+  "twoFactorFido2Add": {
+    "message": "Fügen Sie Ihrem Konto einen FIDO2-Sicherheitsschlüssel hinzu"
+  },
+  "removeFido2Confirmation": {
+    "message": "Sind Sie sich sicher, dass Sie diesen Sicherheitsschlüssel entfernen möchten?"
+  },
   "readKey": {
     "message": "Schlüssel erfassen"
   },
@@ -1318,6 +1342,33 @@
     "message": "Drücken Sie \"Speichern\", um den Sicherheitsschlüssel für die Zwei-Faktor Authentifizierung zu aktivieren."
   },
   "twoFactorU2fProblemReadingTryAgain": {
+    "message": "Es gab ein Problem beim lesen des Sicherheitsschlüssels, bitte erneut versuchen."
+  },
+  "twoFactorFido2GiveName": {
+    "message": "Geben Sie dem Sicherheitsschlüssel einen eigenen Namen, um ihn zu erkennen."
+  },
+  "twoFactorFido2PlugInReadKey": {
+    "message": "Stecken Sie den Sicherheitsschlüssel in den USB-Port Ihres Computers und drücken Sie den \"Schlüssel erfassen\" Knopf."
+  },
+  "twoFactorFido2TouchButton": {
+    "message": "Wenn der Sicherheitsschlüssel eine Taste hat, drücken Sie die."
+  },
+  "twoFactorFido2SaveForm": {
+    "message": "Formular speichern."
+  },
+  "twoFactorFido2Warning": {
+    "message": "Aufgrund von Plattformbeschränkungen kann FIDO2 nicht mit allen Bitwarden-Anwendungen verwendet werden. Sie sollten einen anderen Zwei-Faktor-Authentifizierungsanbieter aktivieren, damit Sie auf Ihr Konto zugreifen können, wenn FIDO2 nicht verwendet werden kann. Unterstützte Plattformen sind:"
+  },
+  "twoFactorFido2SupportWeb": {
+    "message": "Web-Tresor und Browser-Erweiterungen auf einem Desktop/Laptop mit einem FIDO2 fähigen Browser (Chrome, Opera, Vivaldi oder Firefox mit FIDO2 aktiviert)."
+  },
+  "twoFactorFido2Waiting": {
+    "message": "Es wird darauf gewartet, dass Sie die Taste Ihres Sicherheitsschlüssels betätigen"
+  },
+  "twoFactorFido2ClickSave": {
+    "message": "Drücken Sie \"Speichern\", um den Sicherheitsschlüssel für die Zwei-Faktor Authentifizierung zu aktivieren."
+  },
+  "twoFactorFido2ProblemReadingTryAgain": {
     "message": "Es gab ein Problem beim lesen des Sicherheitsschlüssels, bitte erneut versuchen."
   },
   "twoFactorRecoveryYourCode": {
